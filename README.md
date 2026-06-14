@@ -1,118 +1,115 @@
-\# WAXS-Herman-Analysis
-
-
+# WAXS-Herman-Analysis
 
 Python toolkit for WAXS azimuthal profile processing and Herman orientation factor calculation.
 
+## Associated Publication
 
+This repository contains the data-processing workflow used for WAXS orientation analysis in the following publication:
 
-\## Overview
+**Aligned Zeolite Composite Electrolytes Boost Lithium-Ion Transport and Cycling Life**
 
+Chinese Chemical Letters (2026)
 
+DOI: https://doi.org/10.1016/j.cclet.2026.112760
 
-This repository contains the analysis workflow used for processing WAXS azimuthal intensity profiles and calculating the Herman orientation factor.
+---
 
-
+## Overview
 
 The workflow includes:
 
+- Azimuthal profile extraction
+- Symmetric profile extension
+- Baseline correction (AsLS)
+- Herman orientation factor calculation
+- Visualization of raw, baseline and corrected profiles
+- Result export to CSV
 
+---
 
-\- Azimuthal profile extraction
+## Example Result
 
-\- Symmetric profile extension
+The figure below shows a typical WAXS azimuthal profile processing workflow.
 
-\- Baseline correction (AsLS)
+![Example Result](plots/plotsherman_example.png)
 
-\- Herman orientation factor calculation
+The blue curve represents the raw symmetric intensity profile, the orange curve corresponds to the fitted baseline, and the green curve is the baseline-corrected signal used for Herman orientation factor calculation.
 
-\- Figure generation
+---
 
-\- Result export
-
-
-
-\## Repository Structure
-
-
+## Repository Structure
 
 ```text
-
 WAXS-Herman-Analysis
-
-├── src
-
-│   └── herman\_analysis.py
-
-├── example\_data
-
+│
+├── example_data/
 │   └── 251018.xlsx
-
-├── example\_results
-
-│   └── herman\_results.csv
-
-├── plots
-
-├── README.md
-
-└── requirements.txt
-
+│
+├── example_results/
+│   └── herman_results.csv
+│
+├── plots/
+│   └── herman_example.png
+│
+├── src/
+│   └── herman_analysis.py
+│
+├── requirements.txt
+└── README.md
 ```
 
+---
 
-
-\## Installation
-
-
+## Installation
 
 ```bash
-
 pip install -r requirements.txt
-
 ```
 
-
-
-\## Usage
-
-
+## Usage
 
 ```bash
-
-python src/herman\_analysis.py
-
+python src/herman_analysis.py
 ```
 
+Input files should be placed in:
 
+```text
+example_data/
+```
 
-\## Example Output
+Results will be exported to:
 
+```text
+example_results/
+```
 
+---
 
-\- Herman orientation factor
+## Output
 
-\- Corrected intensity profiles
+The script automatically generates:
 
-\- CSV result files
+- Baseline-corrected azimuthal profiles
+- Herman orientation factors
+- Publication-quality figures
+- CSV summary tables
 
-\- Publication-quality figures
+---
 
+## Citation
 
+If you use this code in academic work, please cite:
 
-\## Associated Research
+```text
+Yuan Yu et al.
+Aligned Zeolite Composite Electrolytes Boost Lithium-Ion Transport and Cycling Life.
+Chinese Chemical Letters, 2026.
+DOI: 10.1016/j.cclet.2026.112760
+```
 
+---
 
+## License
 
-This repository contains the computational workflow used for WAXS orientation characterization and Herman orientation factor analysis in published research on aligned zeolite composite electrolytes.
-
-
-
-\## Author
-
-
-
-Qiyuan Xue
-
-Ocean University of China
-
+MIT License
