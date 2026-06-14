@@ -6,7 +6,7 @@ Python toolkit for WAXS azimuthal profile processing and Herman orientation fact
 
 This repository contains the data-processing workflow used for WAXS orientation analysis in the following publication:
 
-**Aligned Zeolite Composite Electrolytes Boost Lithium-Ion Transport and Cycling Life**
+**Shear-aligned zeolite lamellae enable directional ion transport for durable solid polymer electrolytes**
 
 Chinese Chemical Letters (2026)
 
@@ -95,20 +95,16 @@ The script automatically generates:
 - Publication-quality figures
 - CSV summary tables
 
----
-
 ## Citation
 
 If you use this code in academic work, please cite:
 
 ```text
-Yuan Yu et al.
-Aligned Zeolite Composite Electrolytes Boost Lithium-Ion Transport and Cycling Life.
+Yu Yuan, Runfang Zhang, Qiyuan Xue, et al.
+Shear-aligned zeolite lamellae enable directional ion transport for durable solid polymer electrolytes.
 Chinese Chemical Letters, 2026.
 DOI: 10.1016/j.cclet.2026.112760
 ```
-
----
 
 ## License
 
